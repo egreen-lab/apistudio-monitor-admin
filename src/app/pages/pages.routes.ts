@@ -1,8 +1,11 @@
 import {RouterConfig} from '@angular/router';
 import {Dashboard} from './dashboard/dashboard.component';
+import {Pages} from './pages.component';
+
+/*
+
 import {Charts} from './charts/charts.component';
 import {ChartistJs} from './charts/components/chartistJs/chartistJs.component';
-import {Pages} from './pages.component';
 import {Ui} from './ui/ui.component';
 import {Typography} from './ui/components/typography/typography.component';
 import {Buttons} from './ui/components/buttons/buttons.component';
@@ -21,7 +24,7 @@ import {LineMaps} from './maps/components/lineMaps/lineMaps.component';
 import {Editors} from './editors/editors.component';
 import {Ckeditor} from './editors/components/ckeditor/ckeditor.component';
 import {Components} from './components/components.component';
-import {TreeView} from './components/components/treeView/treeView.component';
+import {TreeView} from './components/components/treeView/treeView.component';*/
 
 //noinspection TypeScriptValidateTypes
 export const PagesRoutes:RouterConfig = [
@@ -41,7 +44,8 @@ export const PagesRoutes:RouterConfig = [
             order: 0
           }
         }
-      },
+      }
+      /*,
       {
         path: 'editors',
         component: Editors,
@@ -49,8 +53,9 @@ export const PagesRoutes:RouterConfig = [
           menu: {
             title: 'Editors',
             icon: 'ion-edit',
-            selected: false,
-            expanded: false,
+            selected: false,*
+            /
+            expanded: false,,
             order: 100,
           }
         },
@@ -348,7 +353,8 @@ export const PagesRoutes:RouterConfig = [
           }
         ]
       },
-      {
+      */
+      ,{
         path: '',
         data: {
           menu: {
