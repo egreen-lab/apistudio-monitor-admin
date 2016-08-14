@@ -1,7 +1,7 @@
 import {Component, ViewEncapsulation} from '@angular/core';
 
 import {BaCard} from '../../../theme/components';
-import {PieChartService} from './pieChart.service';
+import {PieChartService} from './quickMonitor.service';
 
 import './pieChart.loader.ts';
 
@@ -14,7 +14,7 @@ import './pieChart.loader.ts';
   template: require('./pieChart.html')
 })
 // TODO: move easypiechart to component
-export class PieChart {
+export class QuickMonitor {
 
   public charts: Array<Object>;
   private _init = false;

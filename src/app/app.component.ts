@@ -6,6 +6,8 @@ import {BaThemeRun} from "./theme/directives";
 import {BaImageLoaderService, BaThemePreloader, BaThemeSpinner} from "./theme/services";
 import {layoutPaths} from "./theme/theme.constants";
 
+
+import {HTTP_PROVIDERS, Http} from '@angular/http';
 /*
  * App Component
  * Top Level Component
@@ -14,7 +16,7 @@ import {layoutPaths} from "./theme/theme.constants";
   selector: 'app',
   pipes: [],
   directives: [BaThemeRun],
-  providers: [BaThemeConfigProvider, BaThemeConfig, BaImageLoaderService, BaThemeSpinner],
+  providers: [BaThemeConfigProvider, BaThemeConfig, BaImageLoaderService, BaThemeSpinner,HTTP_PROVIDERS],
   encapsulation: ViewEncapsulation.None,
   styles: [require('normalize.css'), require('./app.scss')],
   template: `

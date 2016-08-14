@@ -1,7 +1,7 @@
 import {Component, ViewEncapsulation} from '@angular/core';
 
 import {PopularApp} from './popularApp';
-import {PieChart} from './pieChart';
+import {QuickMonitor} from './quick-monitor';
 import {TrafficChart} from './trafficChart';
 import {UsersMap} from './usersMap';
 import {LineChart} from './lineChart';
@@ -13,7 +13,7 @@ import {BaCard} from '../../theme/components';
 @Component({
   selector: 'dashboard',
   pipes: [],
-  directives: [PopularApp, PieChart, TrafficChart, UsersMap, LineChart, Feed, Todo, Calendar, BaCard],
+  directives: [PopularApp, QuickMonitor, TrafficChart, UsersMap, LineChart, Feed, Todo, Calendar, BaCard],
   encapsulation: ViewEncapsulation.None,
   styles: [require('./dashboard.scss')],
   template: require('./dashboard.html')
